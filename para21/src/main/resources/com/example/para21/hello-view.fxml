@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.ComboBox?>
+        <?import javafx.scene.control.TextField?>
+        <?import javafx.scene.layout.AnchorPane?>
+        <?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.para21.HelloApplication">
+    <children>
+        <VBox layoutX="17.0" layoutY="5.0" prefHeight="116.0" prefWidth="556.0">
+            <children>
+                <TextField fx:id="titles" prefHeight="26.0" prefWidth="263.0" text="Введите название книги" />
+                <TextField fx:id="year" prefHeight="26" prefWidth="263" text="Введите год выпуска книги" />
+                <ComboBox fx:id="authors" prefHeight="26.0" prefWidth="590.0" promptText="Выберите автора">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </ComboBox>
+                <ComboBox fx:id="genres" prefHeight="26.0" prefWidth="590.0" promptText="Выберите жанр">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </ComboBox>
+            </children>
+        </VBox>
+        <Button fx:id="addbook" layoutX="244.0" layoutY="121.0" mnemonicParsing="false" onAction="#addbook" text="Добавить книгу" />
+    </children>
+</AnchorPane>
